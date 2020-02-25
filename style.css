@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
-    text-align: center;
-    color: black;
+    color: white;
 }
 
 body{
+    height: 100vh;
+    overflow: hidden;
     background-image: url('background.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main{
@@ -17,10 +18,24 @@ main{
     width: 50vw;
     padding: 5vh;
     border-radius: 2vw;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(0, 0, 0, 0.75);
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 h1{
+    text-align: center;
    font-family: monospace;
-   margin: 0 0 5vh;
+}
+
+p{
+    margin: 3vh 0;
+}
+
+ul{
+    margin-left: 2.5vw;
+}
+
+@keyframes glow{
+    from {box-shadow: 0 0 1vh 1vh rgba(35, 200, 250, 0.8);}
+    to {box-shadow: 0 0 0.5vh 0.5vh rgba(35, 200, 250, 0.8);}
 }
