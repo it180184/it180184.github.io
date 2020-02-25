@@ -1,6 +1,14 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Comic Sans MS';
     text-align: center;
+    color: white;
+}
+
+body{
+    background-image: url('vaporwave.png');
+    background-size: cover;
 }
 
 h1{
