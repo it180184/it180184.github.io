@@ -7,10 +7,10 @@
 
 body{
     height: 100vh;
-    overflow: hidden;
-    background-image: url('background.jpg');
+    background-image: url('img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 main{
@@ -27,15 +27,45 @@ h1{
    font-family: monospace;
 }
 
+h2{
+    text-align: center;
+   font-family: monospace;
+}
+
 p{
     margin: 3vh 0;
 }
 
+
+#logos {
+    height: calc(6vh + 4vw);
+    border-radius: 1vh;
+    margin: 0 auto;
+}
+
 ul{
-    margin-left: 2.5vw;
+    width: 100%;
+    margin-left: 5vw;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 @keyframes glow{
+    from {box-shadow: 0 0 1vh 1vh rgba(35, 200, 250, 0.8);}
+    to {box-shadow: 0 0 0.5vh 0.5vh rgba(35, 200, 250, 0.8);}
+}
+
+@-webkit-keyframes glow{
+    from {box-shadow: 0 0 1vh 1vh rgba(35, 200, 250, 0.8);}
+    to {box-shadow: 0 0 0.5vh 0.5vh rgba(35, 200, 250, 0.8);}
+}
+
+@-moz-keyframes glow{
     from {box-shadow: 0 0 1vh 1vh rgba(35, 200, 250, 0.8);}
     to {box-shadow: 0 0 0.5vh 0.5vh rgba(35, 200, 250, 0.8);}
 }
